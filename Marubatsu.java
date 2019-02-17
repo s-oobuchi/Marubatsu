@@ -4,8 +4,7 @@ public class Marubatsu {
 	public static void main(String[] args) {
 
 		//配列定義
-		String[][] array;
-		array = new String[3][3];
+		String[][] array = new String[3][3];
 
 		//初期値設定
 		for(int i = 0;i < 3;i++ ){
@@ -24,7 +23,7 @@ public class Marubatsu {
 		//〇×格納
 		String stone;
 
-		//ループカウント
+		//ターンカウント
 		int count = 0;
 
 		//ループ判定
@@ -109,7 +108,6 @@ public class Marubatsu {
 
 		    	System.out.println(name + "の勝ちです。");
 		    	scan.close();
-
 		        break;
 
 		    }
@@ -121,7 +119,6 @@ public class Marubatsu {
 
 		        System.out.println(name + "の勝ちです。");
 		        scan.close();
-
 		        break;
 
 		    }
@@ -131,7 +128,6 @@ public class Marubatsu {
 
 		        System.out.println(name + "の勝ちです。");
 		        scan.close();
-
 		        break;
 
 		    }
@@ -141,7 +137,6 @@ public class Marubatsu {
 
 		        System.out.println(name + "の勝ちです。");
 		        scan.close();
-
 		        break;
 
 		    }
@@ -155,6 +150,7 @@ public class Marubatsu {
 
 		    }
 
+		    //次のターンへ
 		    count++;
 
 		    }
